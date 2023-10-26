@@ -1,7 +1,7 @@
 # Module 0
 
 
-## Intro to OpenCV
+### Intro to OpenCV
 
 - [Overview](#overview)
 - [Lecture Slide](#lecture-slides)
