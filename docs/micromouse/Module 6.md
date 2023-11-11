@@ -52,9 +52,7 @@ The JST cables for the encoders are a bit of a pain to put together, so here’s
     
 ![alt_text](images6/image3.jpg "image_tooltip")
 
-
-
-    Note the stripped ends on the right hand side of the image
+Note the stripped ends on the right hand side of the image
 
 * Now, lay the cables on the mouse such that the wires are oriented correctly. The green wire is ground, so make sure you orient it correctly based on your pcb layout.
     * Double check to ensure you have the cables oriented properly in your own schematics!
@@ -65,8 +63,6 @@ The JST cables for the encoders are a bit of a pain to put together, so here’s
 
 
 ![alt_text](images6/image14.png "image_tooltip")
-
-
 
 
 * After you’re done, triple check that your cables are soldered on correctly! You might fry something if there’s any swapped cables!

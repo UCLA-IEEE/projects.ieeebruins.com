@@ -45,7 +45,7 @@ Content Order:
     6. Recommended Parts List
 
 
-# Micromouse Outreach Curriculum Template 
+## Micromouse Outreach Curriculum Template 
 
 
 ### Overview of Micromouse & What it is

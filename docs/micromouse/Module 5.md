@@ -215,8 +215,8 @@ As parameters, it again takes in a port for GPIOx, a pin for GPIO_Pin, and a GPI
 
 * Remember, the constants corresponding to the ports and pins for the pushbutton and LED pins are defined in main.h.
 * EXAMPLE: To set the LED pin to high, do the following:
-
-	HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
+        
+        HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 
 
 

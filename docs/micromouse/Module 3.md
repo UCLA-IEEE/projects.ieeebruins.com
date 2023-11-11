@@ -40,11 +40,11 @@ Pros & Cons of using IR sensors (good to keep in mind as you’re designing your
     3. They output an analog value which lets you roughly measure distance.
     4. NOTE: there is an alternative to IR sensors called sonar (or ultrasonic) sensors, which use sound waves to measure distance. While they are far more accurate than IR sensors when it comes to measuring distance, IR sensors are much easier to use when it comes to detecting the presence of an object (like a wall). Furthermore, IR sensors are a lot faster than ultrasonic sensors, which is useful in micromouse.
 2. Cons:
-    5. Affected by ambient light: although this isn’t usually a problem, if you’re testing in areas with large amounts of sunlight the IR sensors simply won’t work because they will constantly measure the maximum value.
-    6. Require calibration: you will need to recalibrate your IR thresholds every time you change your environment drastically as different rooms will lead to different readings due to slight variations in ambient light.
+    1. Affected by ambient light: although this isn’t usually a problem, if you’re testing in areas with large amounts of sunlight the IR sensors simply won’t work because they will constantly measure the maximum value.
+    2. Require calibration: you will need to recalibrate your IR thresholds every time you change your environment drastically as different rooms will lead to different readings due to slight variations in ambient light.
         - This is also true for different materials. Darker objects generally reflect less light.
-    7. Variation between sensors: even if you have “identical” IR sensors, your sensors will not read the same values at the same distances, so calibration is essential.
-    8. Non linear scaling of distances: the intensity of light measured by the IR receiver is proportional to 1/d<sup>2</sup>, meaning the IR readings don’t scale linearly with distance from the object/wall.
+    3. Variation between sensors: even if you have “identical” IR sensors, your sensors will not read the same values at the same distances, so calibration is essential.
+    4. Non linear scaling of distances: the intensity of light measured by the IR receiver is proportional to 1/d<sup>2</sup>, meaning the IR readings don’t scale linearly with distance from the object/wall.
 
 At first glance, it might seem that IR sensors are a massive disadvantage, but don’t be scared! Most of the disadvantages of IR sensors can be mitigated by calibrating your IR sensors (which we will discuss in a later module), and making sure you don’t test in direct sunlight!
 

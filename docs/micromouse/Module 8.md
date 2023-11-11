@@ -11,14 +11,14 @@
 In this software filled lecture, we will walk you through the floodfill maze solving algorithm. Please make sure you really understand how this algorithm works, as you will be creating your own later in the module. With this final step, your mouse should be good to compete in a micromouse competition!
 
 
-# Floodfill Lecture
+## Floodfill Lecture
 
 So far, you have created your mouse schematic, created your mouse, got the motors to move, and implemented the IR sensors. You’ve come a long way! Congratulations! Your mouse is almost complete. The last thing needed to get your mouse to actually solve the maze is coding the algorithm that will help your mouse navigate through the 16x16 maze during a competition. You will do so by implementing the floodfill algorithm for your mouse. 
 
 Before continuing on with the rest of this module, please make sure you watch the floodfill lecture below. This will give you a good conceptual understanding of the algorithm and will help you immensely while creating your code.
 
 
-# Simulation Setup
+## Simulation Setup
 
 It would be incredibly impractical to try coding the floodfill algorithm directly onto your mouse… testing it would be incredibly tedious as you would have to continuously upload your code to the mouse, and send your mouse through the maze every time you make a small change to the code. Instead, use this micromouse simulation that will model the mouse through the maze, and allow you to virtually test your algorithm to make sure it works!
 
@@ -33,7 +33,7 @@ For MacOS / Linux:
 Once you finish setting up, you will use your solver.c and solver.h files to implement Floodfill.
 
 
-# Simulator Notes
+## Simulator Notes
 
 * The API for the simulator can be found at [https://github.com/mackorone/mms#mouse-api](https://github.com/mackorone/mms#mouse-api)
     * When you eventually port this algorithm to your Mouse, you’ll have to replace the API calls with your own functions that read the IRs!
@@ -46,7 +46,7 @@ Once you finish setting up, you will use your solver.c and solver.h files to imp
         * Note that if you run fprintf( stderr ), you should run fflush(stderr); directly after it to clear the output buffer
 
 
-# Implementing Floodfill
+## Implementing Floodfill
 
 **Here’s the [link](https://drive.google.com/drive/folders/12Jk35q7irAqO6b6fU7UQnhUcyCelNV2E?usp=share_link) to the code templates to help you get started!**
 

@@ -11,7 +11,7 @@
 In this module, we’ll go over what microcontrollers are, the ones we’ll be using, and how the microcontroller interfaces with the rest of the schematic. There is no lecture video for this module, so please make sure you follow along with this module carefully and understand it!
 
 
-# Microcontrollers
+## Microcontrollers
 
 The microcontroller is the brain behind your mouse. It’s responsible for telling all of the other components what to do, and will run all of the algorithms needed to get your mouse to the center of the maze. 
 
@@ -22,7 +22,7 @@ Another option for microcontrollers are the stm32 pill boards, which are smaller
 If you are a bit more advanced and have experience with soldering, you could also use the smd versions of these microcontrollers. This will be just the mcu chip with no extra board. A great option is the [STM32F405RET7](https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F205RET7/5268233). The main pro of using an smd microcontroller is that they take up very little space on the board, at the expense of a really hard PCB layout (we will discuss this in a later module, but tldr: you have to manually route all the connections yourself).
 
 
-# MCU Schematic
+## MCU Schematic
 
 Since we’re using the nucleo boards, our mcu schematic won’t include the microcontroller itself. Instead, it will include 2 2x19 headers which the nucleo board connects to. The library for these headers can be found in Fusion 360 if you open library manager, and enable the pinhead package:
 
@@ -61,7 +61,7 @@ Connect it to labels like this to create your programming header:
 
 
 
-# Pin Selection
+## Pin Selection
 
 Now’s a great time to practice looking through the [datasheet](https://www.st.com/resource/en/datasheet/stm32f411ce.pdf) for the correct pins to connect the IR emitters and receivers to! Note that this is the datasheet for the STM32F411 chips (the nucleos use these), and you should reference your correct datasheet if you are using a different chip. If you remember, we had placeholder names for our IR schematic’s MCU pins, which we will properly define here. Looking for pins is pretty straightforward:
 
