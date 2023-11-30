@@ -1,8 +1,8 @@
 {
   "label": "Micromouse",
-  "position": 2,
+  "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "by UCLA IEEE"
+    "description": "Micromouse by IEEE at UCLA"
   }
 }

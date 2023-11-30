@@ -1,8 +1,8 @@
 {
-  "label": "WRAP: Wireless, RF, and Analog Project",
-  "position": 2,
+  "label": "WRAP",
+  "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "by UCLA IEEE"
+    "description": "Wireless RF and Analog Project (WRAP) by IEEE at UCLA"
   }
 }
