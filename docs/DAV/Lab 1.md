@@ -29,6 +29,8 @@ Welcome to DAV! By this point, you’ve probably attended or watched the first l
 
 ## Contact Us
 
+You can contact the DAV leads on Discord.
+
 **Claire Huang** (Discord: _zhiyujia_)  
 **Premkumar Giridhar** (Discord: _8bitrobot_)
 
