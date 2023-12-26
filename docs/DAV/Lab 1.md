@@ -29,8 +29,7 @@ Welcome to DAV! By this point, you’ve probably attended or watched the first l
 
 ## Contact Us
 
-**Claire Huang** (Discord: _zhiyujia_)
-
+**Claire Huang** (Discord: _zhiyujia_)  
 **Premkumar Giridhar** (Discord: _8bitrobot_)
 
 ## 0 Your First Module
