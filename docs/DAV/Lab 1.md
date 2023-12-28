@@ -56,7 +56,7 @@ That’s right, it’s time for everyone’s favorite part of digital design: te
 
 A testbench, like any other module, uses the `module/endmodule` syntax for declaration. However, as the first line of any testbench, you must include the following line:
 ```verilog
-`timescale 1ns/1ns
+timescale 1ns/1ns
 ```
 
 This is a directive that QuestaSim, our simulation software, uses to determine the duration of “simulation time” units relative to “delay time” units, as well as a degree of precision. The details aren’t too important right now, so you can just copy-paste as written above. If you’re curious and want to read more, [click here](https://www.chipverify.com/verilog/verilog-timescale).
@@ -97,10 +97,10 @@ I hope you didn’t think we’d let you get away without writing a testbench! H
 - It won’t suffice to simply test a couple cases – after all, your ALU has two modes and many more combinations of operands. You could code in tons of cases manually, but there’s an easier way: the Verilog `for`-loop!
 
 ```verilog
-    for (integer i = 0; i < 16; i = i + 1) begin
-        #5; // simulation delay
-        /* YOUR CODE HERE */
-    end
+for (integer i = 0; i < 16; i = i + 1) begin
+    #5; // simulation delay
+    /* YOUR CODE HERE */
+end
 ```
 
 Consider using this as a template to write a for-loop that iterates through a large set of test-cases.
