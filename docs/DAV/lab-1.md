@@ -55,6 +55,7 @@ That’s all there is to it! This module should be at most 10 lines long. Next, 
 That’s right, it’s time for everyone’s favorite part of digital design: testbenching! Let’s write a testbench that confirms that our switch input gets mapped correctly to our LED output. Create a file named `miniALU_tb.sv` and set it as the top-level module.
 
 A testbench, like any other module, uses the `module/endmodule` syntax for declaration. However, as the first line of any testbench, you must include the following line:
+
 ```verilog
 timescale 1ns/1ns
 ```
@@ -85,7 +86,7 @@ Your ALU will **use the switches** as indicated below:
 
 ![alt_text](images/image12.png "image_tooltip")
 
-The select switch will dictate whether the ALU operation is an **addition** (i.e. when `select` is HIGH, output **operand1 + operand2**) or a left-shift (when `select` is LOW, output **operand1 << operand2**). There’s a commonly used hardware block (and a related Verilog construct) that allows you to select between two or more values based on a boolean condition; do you remember what it is? (Hint: It was mentioned in the lecture!)
+The select switch will dictate whether the ALU operation is an **addition** (i.e. when `select` is HIGH, output **operand1 + operand2**) or a left-shift (when `select` is LOW, output **operand1 \<\< operand2**). There’s a commonly used hardware block (and a related Verilog construct) that allows you to select between two or more values based on a boolean condition; do you remember what it is? (Hint: It was mentioned in the lecture!)
 
 The file `miniALU.sv` contains skeleton code including a module declaration and an empty `always_comb` construct, which we use to describe a combinational circuit.. Your task is to declare the module’s ports and fill out the `always` block to complete the module.
 
