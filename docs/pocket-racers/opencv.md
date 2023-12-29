@@ -74,15 +74,23 @@ This function implements adaptive thresholding; the values you will be playing w
 
 For all the different types of thresholding in OpenCV, visit [this page](https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html).
 
-Note: There’s been some confusion about how the C value works exactly. Basically, the adaptive thresholding function operates on every pixel in the original image as follows:
+:::note
+
+There’s been some confusion about how the C value works exactly. Basically, the adaptive thresholding function operates on every pixel in the original image as follows:
 
 1. Calculate a threshold by taking the Gaussian mean of the values in a `k`-by-`k` block centered on the pixel in question.
 2. Subtract this value by C.
 3. Compare the resulting threshold value with the value of the pixel and act in accordance with `thresholdType`.
 
+:::
+
 ## Thresholding with HSV
 
-**Important note**: the range of hues in OpenCV is **0 to 180**, not 0 to 255. Using values above 180, to the best of our knowledge, don’t really do anything.
+:::info
+
+The range of hues in OpenCV is **0 to 180**, not 0 to 255. Using values above 180, to the best of our knowledge, don’t really do anything.
+
+:::
 
     <code><em>mask = cv2.inRange(hsv, lowerBound, upperBound)</em></code>
 
@@ -204,6 +212,10 @@ This will typically result in the bounding rectangle having more excess area tha
 
 The `cv2.moments` function actually returns some more complicated data than what we’ll have to use, but these are the formulas for calculating our needed coordinates. `mx` and `my` are the x and y-coordinates of the moment of inertia of the contour at `contours[i]`.
 
-**Note: **sometimes, you’ll get a DivideByZero error from either of these lines in your code. The issue here is that, if your contours don’t separate properly, the value `moments["m00"]` will be zero and your division will cause an error. To fix this, you can simply wrap these calculations in a `try/except` block, handling the error as you see fit.
+:::note
+
+Sometimes, you’ll get a DivideByZero error from either of these lines in your code. The issue here is that, if your contours don’t separate properly, the value `moments["m00"]` will be zero and your division will cause an error. To fix this, you can simply wrap these calculations in a `try/except` block, handling the error as you see fit.
+
+:::
 
 The guide [here](https://docs.opencv.org/3.4/dd/d49/tutorial_py_contour_features.html) has additional functions that you can use with contours. As we use more, we’ll add them to these docs.
