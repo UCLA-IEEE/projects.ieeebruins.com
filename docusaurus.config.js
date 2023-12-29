@@ -59,7 +59,7 @@ const config = {
       navbar: {
         title: "IEEE at UCLA Project Docs",
         logo: {
-          alt: "My Site Logo",
+          alt: "IEEE Logo",
           src: "img/logo_ieee.svg",
         },
         items: [
@@ -99,6 +99,11 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ["verilog"],
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
       },
     }),
 };
