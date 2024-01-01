@@ -72,7 +72,7 @@ Remember that testbenches are less like digital circuit modules and more like si
 
 Now that you’ve verified your design in simulation, it’s time to upload it to the FPGA and see if it really works. Set `miniALU_top.sv` as the top level and run Synthesis again.
 
-Now, open the Pin Planner. It should list your top-level I/O ports at the bottom below a large grid of colors and shapes. Ignore the grid and refer to the [Pin Sheet]([Pin Sheet](https://docs.google.com/spreadsheets/d/1jTgphR61ozrNZlr9dLvId5t3o0FrikxSZWwAvhXF0Yo/edit#gid=0)) to map your pins. More detailed instructions are provided in the workshop.
+Now, open the Pin Planner. It should list your top-level I/O ports at the bottom below a large grid of colors and shapes. Ignore the grid and refer to the [Pin Sheet](https://docs.google.com/spreadsheets/d/1jTgphR61ozrNZlr9dLvId5t3o0FrikxSZWwAvhXF0Yo/edit#gid=0) to map your pins. More detailed instructions are provided in the workshop.
 
 Once you’ve done that, run the Fitter and Assembler, then program your FPGA. If all is well, each switch should be able to control the LED above it!
 
@@ -86,7 +86,7 @@ In this module, you’ll implement a very **basic ALU **that performs two operat
 
 Your ALU will **use the switches** as indicated below:
 
-![alt_text](images/image12.png "image_tooltip")
+![An image of ten switches on an FPGA. The first four from the left are underlined in red as operand1, a 4 bit number. The next four are underlined as operand2, also 4 bits. The next switch (second from the right) is marked as the select switch.] (images/image12.png "image_tooltip")
 
 The select switch will dictate whether the ALU operation is an **addition** (i.e. when `select` is HIGH, output **operand1 + operand2**) or a left-shift (when `select` is LOW, output **operand1 \<\< operand2**). There’s a commonly used hardware block (and a related Verilog construct) that allows you to select between two or more values based on a boolean condition; do you remember what it is? (Hint: It was mentioned in the lecture!)
 
@@ -116,7 +116,7 @@ In this part of the lab, you will implement a seven-segment decoder. In other wo
 
 Each digit of the seven-segment display of the FPGA requires 8 bits to drive: 7 bits for the segments and an additional bit for the decimal point. This module, which we’ll call `sevenSegDigit`, accepts a **4-bit number** and a **1-bit on/off switch as input** and **output an 8-bit number** for the segments.
 
-![alt_text](images/image11.png)
+![A picture of a seven-segment display unit in the shape of an 8. 0 represents the top segment, 1 represents the top right segment, 2 represents the bottom right segment, 3 represents the bottom segment, 4 represents the bottom left segment, 5 represents the bottom right segment, and 6 represents the middle segment.](images/image11.png)
 
 The segments in each digit are represented by the picture shown here. In other words, “bit 0” (i.e. the LSB) in your 8-bit number should represent the top segment, bit 1 should represent the top-right, etc. Pay careful attention to your indexing when you assign to these segments.
 
