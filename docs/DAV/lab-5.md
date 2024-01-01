@@ -14,6 +14,8 @@ This lab, well, is not really a lab. It’s a guided walkthrough of how your mic
 
 [Pin Sheet](https://docs.google.com/spreadsheets/d/1jTgphR61ozrNZlr9dLvId5t3o0FrikxSZWwAvhXF0Yo/edit#gid=0)
 
+[Solution](https://github.com/amidthestars/DAV-Outreach-Module-Solutions)
+
 ## Contact Us
 
 You can contact the DAV leads on Discord.
