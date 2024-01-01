@@ -24,6 +24,8 @@ Link to Lecture 5
 
 [Verilog Docs and FAQs](https://docs.google.com/document/d/1_8ruatZIb3sZb-3Kk3WOYC8Jzv4HvdwrTPZUGVupdVE/edit)
 
+[Solution](https://github.com/amidthestars/DAV-Outreach-Module-Solutions)
+
 ## Contact Us
 
 You can contact the DAV leads on Discord.
