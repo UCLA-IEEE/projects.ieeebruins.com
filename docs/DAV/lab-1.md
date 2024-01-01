@@ -27,6 +27,8 @@ Welcome to DAV! By this point, you’ve probably attended or watched the first l
 
 [Verilog Docs and FAQ](https://docs.google.com/document/d/1_8ruatZIb3sZb-3Kk3WOYC8Jzv4HvdwrTPZUGVupdVE/edit)
 
+[Solution](https://github.com/amidthestars/DAV-Outreach-Module-Solutions)
+
 ## Contact Us
 
 You can contact the DAV leads on Discord.
