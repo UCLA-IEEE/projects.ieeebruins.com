@@ -13,6 +13,8 @@ sidebar_position: 10
 
 In this software filled lecture, we will walk you through the floodfill maze solving algorithm. Please make sure you really understand how this algorithm works, as you will be creating your own later in the module. With this final step, your mouse should be good to compete in a micromouse competition!
 
+If you're stuck or want to make sure you're on the right track, you can find one implementation of floodfill [here](https://drive.google.com/drive/folders/1_6d2o_yjViv5TPkr-vZGpg-Ce6-iYRiE?usp=sharing). Keep in mind that this isn't the only way to make your algorithm!
+
 ## Floodfill Lecture
 
 So far, you have created your mouse schematic, created your mouse, got the motors to move, and implemented the IR sensors. You’ve come a long way! Congratulations! Your mouse is almost complete. The last thing needed to get your mouse to actually solve the maze is coding the algorithm that will help your mouse navigate through the 16x16 maze during a competition. You will do so by implementing the floodfill algorithm for your mouse.

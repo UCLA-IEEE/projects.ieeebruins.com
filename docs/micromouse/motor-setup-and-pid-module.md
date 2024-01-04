@@ -29,6 +29,8 @@ sidebar_position: 8
 
 In this module, you will continue learning about the STM32CubeIDE, and get the motors working on your mouse. Furthermore, you will learn how to read encoder counts, and use them to implement PID control to make your mouse drive straight and be able to turn!
 
+There's a LOT of code for this module, so if you're stuck or want to verify your answers, you can check them [here](https://drive.google.com/drive/folders/1gwBB0U-VkeGecnpUbbHFzOwJ33mFW20H?usp=drive_link).
+
 # Motor Installation
 
 Before you start using your motors, you need to solder on the components needed to make your motors move! Make sure you solder on the entire h-bridge schematic from the Motors & Encoders Module along with the jst cables.
