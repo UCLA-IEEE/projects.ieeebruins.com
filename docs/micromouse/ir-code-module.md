@@ -14,6 +14,8 @@ sidebar_position: 9
 
 In this module, you will learn how to read IR sensors with your mouse, and create a basic maze solving algorithm!
 
+If you're stuck on the code part of this module or want to check your code, you can find the solutions [here](https://drive.google.com/drive/folders/1N2D29vmxRzmIi1Jk1y8-B1ymXlxzgWmf?usp=drive_link).
+
 ## Hardware
 
 Before continuing with the rest of the module and using the IR sensors, we first need to solder them on. Make sure you have all of the emitters (diodes) and receivers (the phototransistors) soldered onto your mouse along with the passives that go with them (resistors and capacitors). You can refer to the schematic you’ve been making so far to check which passives you have to have soldered on before continuing (just make sure all the ones from all the IR schematics are on the board and soldered on).
