@@ -27,6 +27,8 @@ In Lecture 2, you learned about all of the components behind sequential logic. Y
 
 [Verilog Docs and FAQ](https://docs.google.com/document/d/1_8ruatZIb3sZb-3Kk3WOYC8Jzv4HvdwrTPZUGVupdVE/edit)
 
+[Solution](https://github.com/amidthestars/DAV-Outreach-Module-Solutions)
+
 ## Contact Us
 
 You can contact the DAV leads on Discord.
@@ -55,7 +57,7 @@ All that being said, here’s the “spec” for your clock divider:
 - We tend to use this clock divider module for slower clocks where accuracy isn’t a high concern, so your speed input should only have enough bits to indicate a clock speed of at most **1 MHz**. You should think about how much that is in Hz and calculate the number of bits appropriately. (There’s a neat trick to finding that number of bits – see if you can find it in [Verilog Docs and FAQ](https://docs.google.com/document/d_8ruatZIb3sZb-3Kk3WOYC8Jzv4HvdwrTPZUGVupdVE/edit)!)
 - As we discussed in lecture, the clock divider uses a counter to determine when to flip the clock. The counter’s maximum value is simply your division ratio – if your base clock is 16 Hz and your output speed is 4 Hz, your counter should increment every clock cycle but never exceed **3** , i.e. **`(BASE_SPEED / speed) - 1`**.
   - We subtract 1 here because the counter range starts at 0, meaning that a clock period spans 0 to 3 – a total of 4 clock cycles.
-- This module will require both a sequential block and a combinational block.
+- This module will require both a sequential block and a combinational block. Recall that when we write sequential circuits, we try to keep our logic contained in the combinational block as much as possible, and we reserve the sequential block for synchronously assigning values.
   - In the **combinational block**, you will determine what the value of your output clock will be for the next clock cycle. If the reset button is pressed, set the output clock to 0. If the counter is less than halfway up to the maximum value, i.e. less than or equal to 1 in the example above, also set the output clock to 0. Otherwise, set it to 1. This will ensure a **50% duty cycle**; most of our peripherals (including the buzzer) are only happy at 50%, so in general you should pick that as your output clock’s duty cycle of choice.
     - :::note
       A common industry standard naming convention is `regName_d` to indicate the value of `regName` on the following clock cycle.
@@ -107,7 +109,7 @@ For those who have never touched a breadboard, here’s a quick introduction.
 
 Here’s a picture of a breadboard. For our purposes, we can ignore the areas between the - and + on either side. (If you’re curious, those would be for if you wanted to attach batteries or power sources.)
 
-![alt_text](images/image2.png)
+![A diagram of a breadboard.](images/image2.png)
 
 What we want to observe is the pins in the middle. We’ll refer to the A-J lines as “columns” and the 1-30 lines as “rows.” (A2 would be column A, row 2). Notice the yellow lines connecting everything row-wise? If we want to connect something in series, we would want to connect them using pins in the same row. That’s all we’ll need for the purposes of DAV. (For reference, connecting things across columns would be connecting them in parallel.)
 
@@ -153,7 +155,7 @@ So how do we get started?
 
 We’re going to provide you with a block diagram for the alarm clock. A block diagram is essentially a bird’s-eye view of all the modules in the stopwatch and how they go together. This is a simplified version, i.e. not everything is connected up and **the buzzer is missing** – if it were complete, you wouldn’t have very much to figure out yourself :-)
 
-![alt_text](images/image1.png)
+![A semi-complete block diagram of an alarm clock, with each block representing a module. The first module, "clockDivider," is clocked by the 50 megahertz clock from the FPGA, takes in a speed switch as input, and outputs a new clock at the desired speed. This divided clock becomes the clock for the alarmController module, which also takes in the buttons as input. The output of this module goes into the alarmClock top module, which contains the seven segment display and seven segment digit modules. The alarmClock top module outputs six buses that go into the FPGA's seven segment displays.](images/image1.png)
 
 - Each rectangle is a “block,” or a module with the given name. (You can choose your own names if you’d like.)
 - The wires coming from within `FPGA` are pins on the FPGA that you will route into your top level module, `alarmClock_top`.

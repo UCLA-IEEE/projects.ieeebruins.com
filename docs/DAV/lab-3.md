@@ -18,8 +18,12 @@ Ah yes, the FFT. In lecture 3, we covered how the Fast Fourier Transform (FFT) w
 ## Resources and Reference Material
 
 [Link to Lecture 3](https://drive.google.com/file/d/1ZpZNq0DCSLgWa0FdoBjDLQwYdLYMBiAf/view?usp=sharing)  
+
 [Pin Sheet](https://docs.google.com/spreadsheets/d/1jTgphR61ozrNZlr9dLvId5t3o0FrikxSZWwAvhXF0Yo/edit#gid=0)  
+
 [Verilog Docs](https://docs.google.com/document/d/1_8ruatZIb3sZb-3Kk3WOYC8Jzv4HvdwrTPZUGVupdVE/edit)
+
+[Solution](https://github.com/amidthestars/DAV-Outreach-Module-Solutions)
 
 ## Contact Us
 
