@@ -11,6 +11,8 @@ sidebar_position: 7
 
 In this module you will learn about the software that we use to program the STM32 microcontrollers! We will walk you through setting up the IDE, and some basic code to get you familiar with the software. At this point, you should have finished your schematic, PCB, and have started the soldering components onto your mouse!
 
+If you need help for the code part of this module or want to verify your code, you can check [here](https://drive.google.com/drive/folders/1PAeCPyS8xuI77j-Z--dN4X3imm9GURkr?usp=drive_link).
+
 ## Installing CubeIDE
 
 The STM microcontrollers can be programmed and configured using the STM32CubeIDE. In this section, we will walk you through setting up the software for your mice so that you can get it up and running!
