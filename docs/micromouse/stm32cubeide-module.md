@@ -151,7 +151,7 @@ Do **NOT** delete the comments. When writing code in generated files, you must w
 - Our code will be placed between these two comments. Copy and paste the following between them:
 
 ```c
-void HAL*GPIO_EXTI_Callback(uint16_t GPIO_PIN)
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_PIN)
 {
   if (GPIO_PIN == Button_Pin)
   {
